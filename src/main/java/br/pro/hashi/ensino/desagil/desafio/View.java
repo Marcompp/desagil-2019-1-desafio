@@ -72,6 +72,14 @@ public class View extends JPanel {
             g.drawImage(image, col * CELL_SIZE, row * CELL_SIZE, CELL_SIZE, CELL_SIZE, this);
         });
 
+
+        if (model.getWinner() != null) {
+            g.setFont(new Font("TimesRoman", Font.PLAIN, 100));
+
+            g.setColor(Color.green);
+            g.drawString(model.getWinner().toString() + " venceu!", 70, 200);
+        }
+
         // Linha necessária para evitar atrasos
         // de renderização em sistemas Linux.
         getToolkit().sync();

@@ -18,6 +18,7 @@ public class Model {
         cpuPlayer = new CpuPlayer(8, 18, board);
 
         winner = null;
+
     }
 
     public Player getWinner() {

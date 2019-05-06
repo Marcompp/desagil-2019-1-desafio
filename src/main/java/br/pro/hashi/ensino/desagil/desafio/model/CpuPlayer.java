@@ -108,5 +108,6 @@ public class CpuPlayer extends Player {
         private int getCol() {
             return col;
         }
+
     }
 }
